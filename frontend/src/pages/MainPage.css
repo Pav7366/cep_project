@@ -1,0 +1,75 @@
+.app header {
+  background: #fff;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs {
+  background: #fff;
+  padding: 10px 5%;
+  display: flex;
+  gap: 8px;
+}
+
+.tabs button {
+  background: #fff;
+  color: #333;
+}
+
+.tabs .active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.stat {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.stat span {
+  display: block;
+  color: #667085;
+}
+
+.stat strong {
+  font-size: 25px;
+}
+
+.group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #f8fafc;
+  color: #222;
+  margin: 5px 0;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chips label {
+  font-weight: normal;
+  background: #eef2ff;
+  padding: 6px 9px;
+  border-radius: 20px;
+}
+
+@media (max-width: 750px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
